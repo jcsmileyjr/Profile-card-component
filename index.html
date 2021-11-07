@@ -9,8 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Profile card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     :root {
       --Dark-cyan: hsl(185, 75%, 39%);
@@ -21,34 +19,95 @@
 
     body {
       background-color: var(--Dark-cyan);
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+      margin: auto;
+      font-family: 'Kumbh Sans', sans-serif;
+    }
+
+    main {
+      border-radius: 20px;
+    }
+
+    .topImage {
+      border-top-left-radius: 18px;
+      border-top-right-radius: 18px;
+      margin-bottom:-5px
+    }
+
+    .content {
+      background-color: white;
+      border-bottom-left-radius: 18px;
+      border-bottom-right-radius: 18px;
+    }
+
+    .content__profile {
+      border-bottom-style: solid;
+      border-bottom-width: .1px;
+      border-bottom-color: lightgrey;
+    }
+
+    .content__stats {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .content__stats  div {
+      text-align: center;
+    }
+
+    .darkColor {
+      color: var(--Very-desaturated-blue);
+      font-weight: 700;
+      font-size: 24px;
+      margin-bottom: 4px;
+    }
+
+    .lightColor {
+      color: var(--Dark-grayish-blue);
+      margin-top: 4px;
+    }
+
+    .content--center {
+      text-align: center;
     }
 
   </style>
 </head>
 <body>
   <main>
-    <section>
-      <svg width="978" height="978" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="50%" y1=".779%" x2="50%" y2="100%" id="a"><stop stop-color="#0989B4" stop-opacity="0" offset="0%"/><stop stop-color="#53FFEE" offset="99.94%"/></linearGradient></defs><ellipse fill="url(#a)" transform="rotate(-135 489 489)" cx="489" cy="489" rx="489" ry="488" fill-rule="evenodd" opacity=".5"/></svg>
-    </section>
-    <section>
-      <img src="images/image-victor.jpg" alt="man's face" />
-      <p>Victor Crest  <span>26</span></p>
-      <p>London</p>
-    </section>
-    <section>
-      <div>
-        <p>80K</p>
-        <p>Followers</p>
-      </div>
-      <div>
-        <p>803K</p>
-        <p>Likes</p>
-      </div>
-      <div>
-        <p>1.4K</p>
-        <p>Photos</p>
-      </div>
-    </section>
+    <article >
+      <img class="topImage" src="images/bg-pattern-card.svg" alt="" />
+    </article>
+    <article class="content">
+      <section class="content__profile">
+        <div>
+          <img src="images/image-victor.jpg" alt="man's face" />
+        </div>
+        <div class="content--center">
+          <p class="darkColor" >Victor Crest  <span class="lightColor">26</span></p>
+          <p class="lightColor" >London</p>
+        </div>
+      </section>
+      <section class="content__stats">
+        <div>
+          <p class="darkColor">80K</p>
+          <p class="lightColor">Followers</p>
+        </div>
+        <div>
+          <p class="darkColor">803K</p>
+          <p class="lightColor">Likes</p>
+        </div>
+        <div>
+          <p class="darkColor">1.4K</p>
+          <p class="lightColor">Photos</p>
+        </div>
+      </section>
+    </article>
   </main>
 </body>
 </html>
