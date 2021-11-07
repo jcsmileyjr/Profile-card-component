@@ -20,8 +20,6 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 - [Live Site URL](https://jcsmileyjr.github.io/Profile-card-component/)
 - [Read the blog post](https://dev.to/jcsmileyjr/frontend-challenge-4-profile-card-component-46b9)
 
-## My process
-
 ### Built with
 
 - Semantic HTML5 markup
