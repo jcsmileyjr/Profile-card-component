@@ -48,6 +48,19 @@
       border-bottom-style: solid;
       border-bottom-width: .1px;
       border-bottom-color: lightgrey;
+      position: relative;
+      padding-top: 60px;
+      display: flex;
+    justify-content: center;
+    }
+
+    .profile__container {
+      position: absolute;
+      top:-45px;
+    }
+
+    .profile__image--styles {
+      border-radius: 90px;
     }
 
     .content__stats {
@@ -85,8 +98,8 @@
     </article>
     <article class="content">
       <section class="content__profile">
-        <div>
-          <img src="images/image-victor.jpg" alt="man's face" />
+        <div class="profile__container">
+          <img src="images/image-victor.jpg" class="profile__image--styles" alt="man's face" />
         </div>
         <div class="content--center">
           <p class="darkColor" >Victor Crest  <span class="lightColor">26</span></p>
